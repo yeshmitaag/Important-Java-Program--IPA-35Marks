@@ -56,7 +56,7 @@ public class Solution {
         }
         secondHighestPriceFootwear.sort(Comparator.comparing(Footwear::getPrice).reversed());
 
-        if(secondHighestPriceFootwear.size()>2){
+        if(secondHighestPriceFootwear.size()>=2){
             return secondHighestPriceFootwear.get(1);
         }
         return null;
